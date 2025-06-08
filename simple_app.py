@@ -1,12 +1,13 @@
 from flask import Flask, render_template_string
 import requests
 
+
 app = Flask(__name__)
 
 @app.route('/')
 def home():
     return render_template_string('''
-    <h1>ColorPAR Test</h1>
+    <h1>ColorPAR Test - VSCode Working</h1>
     <button onclick="testPico()">Test Pico2W Connection</button>
     <div id="result"></div>
     
